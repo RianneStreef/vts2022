@@ -1,11 +1,11 @@
 const intakeInfo = {
-  companyName: "Template",
-  companyAddress: "Template Street",
-  domainName: "www.template.com",
+  companyName: "VTS Web Design",
+  companyAddress: "La Saponaire, Val Thorens, 73440, France",
+  domainName: "www.vts-webdesign.com",
   contactEmail: "",
 
-  siteName: "Template site",
-  highlightColor: "#ff00ff",
+  siteName: "VTS Web Design",
+  highlightColor: "#40c8e0",
 
   taxNumber: "1313",
 };

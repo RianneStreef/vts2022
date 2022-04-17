@@ -1,0 +1,19 @@
+.intros {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 20%;
+}
+
+.intro-text {
+  text-align: center;
+}

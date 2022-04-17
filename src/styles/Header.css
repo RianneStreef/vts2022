@@ -1,6 +1,7 @@
 .header {
   position: fixed;
-  background-color: var(--color-background-light);
+  background-color: rgb(0, 0, 0, 0.8);
+  color: #fff;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -45,6 +46,10 @@
 
 .hidden-mobile {
   display: none;
+}
+
+.set-language {
+  display: flex;
 }
 
 @media only screen and (min-width: 768px) {

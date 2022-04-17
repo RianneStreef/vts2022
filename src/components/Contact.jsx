@@ -7,15 +7,12 @@ import { content } from "../content/languages";
 const Contact = (props) => {
   let { language, languageToUse } = props;
 
-  language === "english"
-    ? (languageToUse = content.english)
-    : (languageToUse = content.french);
+  language === "english" ? (languageToUse = content.english) : null;
+  language === "french" ? (languageToUse = content.french) : null;
+  language === "dutch" ? (languageToUse = content.dutch) : null;
   return (
     <div className="contact" id="contact">
-      <div className="header-placeholder" />
-
-      <h3>{languageToUse.contact}</h3>
-      <p className="grey-text intro-text">{languageToUse.contactIntro}</p>
+      <h2>{languageToUse.contactTitle}</h2>
 
       <div className="contact-card">
         <div className="form-container">

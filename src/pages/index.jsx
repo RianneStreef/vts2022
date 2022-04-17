@@ -7,6 +7,10 @@ import { content } from "../content/languages";
 import intakeInfo from "../content/intake";
 
 import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const IndexPage = function (props) {
   let { language, languageToUse } = props;
@@ -26,7 +30,10 @@ const IndexPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
-      <div className="header-placeholder" />
+      <Hero />
+      <About language={language} languageToUse={languageToUse} />
+      <Projects language={language} languageToUse={languageToUse} />
+      <Contact language={language} languageToUse={languageToUse} />
     </div>
   );
 };

@@ -6,15 +6,15 @@ import Footer from "./Footer";
 const Layout = ({ children }) => {
   let [language, setLanguage] = useState("french");
   let languageToUse = "";
-  let languageInStorage = "";
+  // let languageInStorage = "";
 
-  useEffect(() => {
-    if (localStorage.getItem("languageInStorage")) {
-      setLanguage(languageInStorage);
-      console.log("language found");
-      console.log(languageInStorage);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.getItem("languageInStorage")) {
+  //     setLanguage(languageInStorage);
+  //     console.log("language found");
+  //     console.log(languageInStorage);
+  //   }
+  // }, []);
 
   console.log("language in layout");
   console.log(language);

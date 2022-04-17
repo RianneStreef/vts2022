@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 
 import Burger from "../components/Burger";
 
-import logo from "../images/icon.png";
+import logo from "../images/logo-white.png";
 
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
@@ -35,8 +35,18 @@ const Header = (props) => {
       </div>
       <ul className="links hidden-mobile">
         <li>
-          <Link to="/" className="nav-link">
-            Welcome
+          <Link to="/#about" className="nav-link">
+            {languageToUse.about}
+          </Link>
+        </li>
+        <li>
+          <Link to="/#projects" className="nav-link">
+            {languageToUse.projects}
+          </Link>
+        </li>
+        <li>
+          <Link to="/#contact" className="nav-link">
+            {languageToUse.contact}
           </Link>
         </li>
 
