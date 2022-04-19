@@ -19,7 +19,7 @@ const IndexPage = function (props) {
   language === "french" ? (languageToUse = content.french) : null;
   language === "dutch" ? (languageToUse = content.dutch) : null;
 
-  console.log(language);
+  console.log(intakeInfo);
   console.log(languageToUse);
   return (
     <div>
