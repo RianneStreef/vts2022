@@ -19,6 +19,7 @@ const IndexPage = function (props) {
   language === "french" ? (languageToUse = content.french) : null;
   language === "dutch" ? (languageToUse = content.dutch) : null;
 
+  console.log("languageToUse in index");
   console.log(languageToUse);
 
   function handleDarkMode() {
