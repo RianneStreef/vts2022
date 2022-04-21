@@ -41,11 +41,11 @@ const IndexPage = function (props) {
   return (
     <div>
       <Helmet>
-        <title>{languageToUse.indexTitle}</title>
+        {/* <title>{languageToUse.indexTitle}</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content={languageToUse.metaDescription} />
         <meta name="keywords" content={languageToUse.metaKeywords} />
-        <link rel="canonical" href={intakeInfo.domainName} />
+        <link rel="canonical" href={intakeInfo.domainName} /> */}
       </Helmet>
       <Hero language={language} languageToUse={languageToUse} />
       <About language={language} languageToUse={languageToUse} />
