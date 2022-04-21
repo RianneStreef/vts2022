@@ -1,3 +1,11 @@
+.projects-dark-mode {
+  background: linear-gradient(to bottom, #000 50%, #fff 0%);
+}
+
+.projects-light-mode {
+  background: linear-gradient(to bottom, #fff 50%, #000 0%);
+}
+
 .main-projects {
   display: flex;
   flex-direction: column;
@@ -44,7 +52,9 @@
 
 .other-projects-list {
   display: flex;
+  justify-content: space-around;
   list-style: none;
+  padding-bottom: 50px;
 }
 
 .partner-logo {

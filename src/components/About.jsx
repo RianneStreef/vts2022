@@ -7,7 +7,7 @@ import "../styles/About.css";
 import Xav from "../images/xav.png";
 
 const About = (props) => {
-  let { language, languageToUse } = props;
+  let { language, languageToUse, darkMode } = props;
 
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
@@ -17,7 +17,10 @@ const About = (props) => {
   console.log(languageToUse);
 
   return (
-    <div className="about" id="about">
+    <div
+      className={`about ${darkMode ? "about-dark-mode" : "about-light-mode"} `}
+      id="about"
+    >
       <h2>{languageToUse.aboutTitle}</h2>
       <div className="intros">
         <div className="intro">

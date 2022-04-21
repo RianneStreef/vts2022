@@ -1,3 +1,11 @@
+.about-dark-mode {
+  background: linear-gradient(to bottom, #000 50%, #fff 0%);
+}
+
+.about-light-mode {
+  background: linear-gradient(to bottom, #fff 50%, #000 0%);
+}
+
 .intros {
   display: flex;
   justify-content: space-around;

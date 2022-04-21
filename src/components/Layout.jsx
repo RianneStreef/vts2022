@@ -8,6 +8,11 @@ const Layout = ({ children }) => {
   let languageToUse = "";
   let [darkMode, setDarkMode] = useState(true);
 
+  useEffect(() => {
+    console.log("darkMode useEffect Layout");
+    console.log(darkMode);
+  }, [darkMode]);
+
   // let languageInStorage = "";
 
   // useEffect(() => {

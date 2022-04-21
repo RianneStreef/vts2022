@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import { content } from "../content/languages";
 
@@ -11,13 +10,18 @@ import partner3 from "../images/partner3.png";
 import partner4 from "../images/partner4.png";
 
 const Projects = (props) => {
-  let { language, languageToUse } = props;
+  let { language, languageToUse, darkMode } = props;
 
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
   language === "dutch" ? (languageToUse = content.dutch) : null;
   return (
-    <div className="projects" id="projects">
+    <div
+      className={`projects ${
+        darkMode ? "projects-dark-mode" : "projects-light-mode"
+      } `}
+      id="projects"
+    >
       <h2>{languageToUse.projectsTitle}</h2>
       <div className="main-projects">
         <div className="main-project-1">
@@ -42,7 +46,7 @@ const Projects = (props) => {
       <div className="other-projects">
         <ul className="other-projects-list">
           <li>
-            <img src={partner1} className="partner-logo" />
+            <img src={partner1} className="partner-logo " />
           </li>
           <li>
             <img src={partner2} className="partner-logo" />
