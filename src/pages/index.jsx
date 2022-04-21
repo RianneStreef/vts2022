@@ -13,14 +13,31 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
 const IndexPage = function (props) {
-  let { language, languageToUse } = props;
+  let { language, languageToUse, darkMode, setDarkMode } = props;
 
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
   language === "dutch" ? (languageToUse = content.dutch) : null;
 
-  console.log(intakeInfo);
-  console.log(languageToUse);
+  function handleDarkMode() {
+    setDarkMode(!darkMode);
+    console.log(darkMode);
+
+    var backgroundColor = document.documentElement.style;
+    var textColor = document.documentElement.style;
+    var shadowColor = document.documentElement.style;
+
+    if (darkMode === false) {
+      backgroundColor.setProperty("--color-background", "#fff");
+      textColor.setProperty("--color-text", "#000");
+      shadowColor.setProperty("--color-highlight", "#d31376");
+    } else {
+      backgroundColor.setProperty("--color-background", "#000");
+      textColor.setProperty("--color-text", "#fff");
+      shadowColor.setProperty("--color-highlight", "#40c8e0");
+    }
+  }
+
   return (
     <div>
       <Helmet>
@@ -30,10 +47,13 @@ const IndexPage = function (props) {
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
-      <Hero />
+      <Hero language={language} languageToUse={languageToUse} />
       <About language={language} languageToUse={languageToUse} />
       <Projects language={language} languageToUse={languageToUse} />
       <Contact language={language} languageToUse={languageToUse} />
+      <button onClick={handleDarkMode} className="dark-mode-button">
+        {darkMode ? <span> Light-mode</span> : <span> Dark-mode </span>}
+      </button>
     </div>
   );
 };

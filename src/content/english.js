@@ -5,6 +5,8 @@ export const english = {
   metaDescription: "English description",
   metaKeywords: "English keywords",
 
+  heroTitle: "Creator of digital solutions",
+
   contact: "Contact",
   contactIntro: "Contact intro",
   name: "Name",

@@ -1,9 +1,34 @@
 import React from "react";
 
-import "../styles/Hero.css";
+import { Link } from "gatsby";
 
-const Hero = () => {
-  return <div className="hero" />;
+import "../styles/Hero.css";
+import heroImage from "../images/hero-image.png";
+
+import { content } from "../content/languages";
+
+const Hero = (props) => {
+  let { language, languageToUse } = props;
+
+  language === "english" ? (languageToUse = content.english) : null;
+  language === "french" ? (languageToUse = content.french) : null;
+  return (
+    <div className="hero">
+      <div className="hero-text">
+        <h1>VTS-WEB DESIGN</h1>
+        <h2>{languageToUse.heroTitle}</h2>
+        <div className="hero-links">
+          <Link to="/#contact" className="hero-button hero-button-blue">
+            Contact Us!
+          </Link>
+          <Link to="/#projects" className="hero-button hero-button-transparent">
+            Partners
+          </Link>
+        </div>
+      </div>
+      <img src={heroImage} className="hero-image" />
+    </div>
+  );
 };
 
 export default Hero;

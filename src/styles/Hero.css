@@ -1,12 +1,37 @@
 .hero {
   width: 100vw;
   min-height: 100vh;
-  background-image: url("../images/hero1.jpeg");
+  background-color: var(--color-background);
+  /* background-image: url("../images/hero1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero-button {
+  border: 2px solid var(--color-highlight);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.hero-button-blue {
+  background-color: var(--color-highlight);
+  color: var(--color-background);
+}
+.hero-button-transparent {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -9,6 +9,8 @@ export const french = {
   projects: "Projets",
   contact: "Contact",
 
+  heroTitle: "Créateur de solutions digitales",
+
   aboutTitle: "A Propos",
   xav: "Xavier - le graphiste",
   ri: "Rianne - la web dévelopeuse",

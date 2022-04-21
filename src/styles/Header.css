@@ -1,7 +1,7 @@
 .header {
   position: fixed;
-  background-color: rgb(0, 0, 0, 0.8);
-  color: #fff;
+  background-color: var(--color-background);
+  color: var(--color-text);
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -18,26 +18,22 @@
 }
 
 .header-logo {
-  width: 10%;
+  width: 5%;
   margin: 10px;
 }
 
 .nav-link {
-  color: var(--color-text-dark);
+  color: var(--color-text);
   text-decoration: none;
   margin: 10px;
 }
 
-.logo-link {
-  text-align: right;
-}
-
 .nav-link:hover {
-  border-bottom: 1px solid var(--color-text-dark);
+  border-bottom: 1px solid var(--color-text);
 }
 
 .nav-link:visited {
-  color: var(--color-text-dark);
+  color: var(--color-text);
 }
 
 .header ul {
@@ -50,6 +46,7 @@
 
 .set-language {
   display: flex;
+  margin-right: 40px;
 }
 
 @media only screen and (min-width: 768px) {

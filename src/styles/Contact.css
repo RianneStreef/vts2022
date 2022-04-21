@@ -7,9 +7,9 @@
 
 input,
 textarea {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-background);
+  color: var(--color-text);
   width: 90vw;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--color-text);
 }

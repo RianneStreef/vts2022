@@ -6,6 +6,8 @@ import Footer from "./Footer";
 const Layout = ({ children }) => {
   let [language, setLanguage] = useState("french");
   let languageToUse = "";
+  let [darkMode, setDarkMode] = useState(true);
+
   // let languageInStorage = "";
 
   // useEffect(() => {
@@ -24,6 +26,8 @@ const Layout = ({ children }) => {
       language,
       setLanguage,
       languageToUse,
+      darkMode,
+      setDarkMode,
     })
   );
   return (
@@ -32,6 +36,8 @@ const Layout = ({ children }) => {
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
       />
       <section className="main">{childrenWithProps}</section>
 

@@ -4,20 +4,22 @@
     url(../fonts/Noto_Sans_JP/NotoSansJP-Regular.otf) format("truetype");
 }
 
-html {
-  font-size: calc(60% + 0.8vmin);
-  scroll-behavior: smooth;
+:root {
+  --color-highlight: #40c8e0;
+  --color-shadow: #eaeaea;
+  --color-text: #fff;
+  --color-background: #000;
 }
 
-* {
-  font-size: 1rem;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-background);
+  color: var(--color-text);
   font-family: "Noto";
 }
 
@@ -26,19 +28,9 @@ main {
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 2.2rem;
-}
-
 h2 {
-  font-size: 3.5rem;
-  color: #40c8e0;
-  padding-left: 50px;
+  color: var(--color-highlight);
   text-transform: uppercase;
-}
-
-h3 {
-  font-size: 1.3rem;
 }
 
 .layout {
@@ -78,4 +70,10 @@ h3 {
 
 .hidden {
   display: none;
+}
+
+.dark-mode-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
 }
