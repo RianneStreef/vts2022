@@ -26,5 +26,5 @@ export const french = {
   message: "Message",
   send: "Envoyer",
 
-  thanks: "Thank you for your message!",
+  thanks: "Merci pour votre message!",
 };

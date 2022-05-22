@@ -14,19 +14,16 @@ const Hero = (props) => {
   language === "french" ? (languageToUse = content.french) : null;
   return (
     <div className="hero">
-      <div className="hero-text">
-        <h1>VTS-WEB DESIGN</h1>
-        <h2>{languageToUse.heroTitle}</h2>
-        <div className="hero-links">
-          <Link to="/#contact" className="hero-button hero-button-blue">
-            Contact Us!
-          </Link>
-          <Link to="/#projects" className="hero-button hero-button-transparent">
-            Partners
-          </Link>
-        </div>
+      <h1>VTS-WEB DESIGN</h1>
+      <h2>{languageToUse.heroTitle}</h2>
+      <div className="hero-links">
+        <Link to="/#contact" className="hero-button hero-button-blue">
+          Contact Us!
+        </Link>
+        <Link to="/#projects" className="hero-button hero-button-transparent">
+          Partners
+        </Link>
       </div>
-      <img src={heroImage} className="hero-image" />
     </div>
   );
 };

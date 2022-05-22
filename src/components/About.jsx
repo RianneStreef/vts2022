@@ -21,7 +21,7 @@ const About = (props) => {
       className={`about ${darkMode ? "about-dark-mode" : "about-light-mode"} `}
       id="about"
     >
-      <h2>{languageToUse.aboutTitle}</h2>
+      <h2 className="h2">{languageToUse.aboutTitle}</h2>
       <div className="intros">
         <div className="intro">
           <img src={Xav} alt="Xavier" className="photo" />

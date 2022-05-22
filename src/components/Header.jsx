@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 
 import Burger from "../components/Burger";
@@ -24,8 +24,38 @@ const Header = (props) => {
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
   language === "dutch" ? (languageToUse = content.dutch) : null;
+
+  useEffect(() => {
+    const header = document.getElementById("header");
+    const scrollUp = "scroll-up";
+    const scrollDown = "scroll-down";
+    let lastScroll = 0;
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        header.classList.remove(scrollUp);
+        return;
+      }
+
+      if (
+        currentScroll > lastScroll &&
+        !header.classList.contains(scrollDown)
+      ) {
+        header.classList.remove(scrollUp);
+        header.classList.add(scrollDown);
+      } else if (
+        currentScroll < lastScroll &&
+        header.classList.contains(scrollDown)
+      ) {
+        header.classList.remove(scrollDown);
+        header.classList.add(scrollUp);
+      }
+      lastScroll = currentScroll;
+    });
+  });
+
   return (
-    <div className="header">
+    <div className="header scroll-up" id="header">
       {darkMode ? (
         <img src={logoWhite} alt="Logo" className="header-logo" />
       ) : (
@@ -56,7 +86,7 @@ const Header = (props) => {
           </Link>
         </li>
       </ul>
-      <div className="set-language">
+      <div className="set-language hidden-mobile">
         <button
           onClick={() => handleSetLanguage("english")}
           onKeyPress={() => handleSetLanguage("english")}

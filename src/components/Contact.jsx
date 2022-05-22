@@ -12,7 +12,7 @@ const Contact = (props) => {
   language === "dutch" ? (languageToUse = content.dutch) : null;
   return (
     <div className="contact" id="contact">
-      <h2>{languageToUse.contactTitle}</h2>
+      <h2 className="h2">{languageToUse.contactTitle}</h2>
 
       <div className="contact-card">
         <div className="form-container">

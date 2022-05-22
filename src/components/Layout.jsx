@@ -37,13 +37,13 @@ const Layout = ({ children }) => {
   );
   return (
     <div className="layout">
-      <Header
+      {/* <Header
         language={language}
         setLanguage={setLanguage}
         languageToUse={languageToUse}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
-      />
+      /> */}
       <section className="main">{childrenWithProps}</section>
 
       <Footer

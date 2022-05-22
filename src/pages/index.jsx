@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
+import { Link } from "gatsby";
+
 import "../styles/global.css";
 
 import { content } from "../content/languages";
@@ -12,12 +14,20 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
+import flagEn from "../images/icon-en.png";
+import flagFr from "../images/icon-fr.png";
+
 const IndexPage = function (props) {
-  let { language, languageToUse, darkMode, setDarkMode } = props;
+  let { language, setLanguage, languageToUse, darkMode, setDarkMode } = props;
 
   language === "english"
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
+
+  function handleSetLanguage(language) {
+    setLanguage(language);
+    localStorage.setItem("languageInStorage", language);
+  }
 
   console.log("languageToUse in index");
   console.log(languageToUse);
@@ -51,20 +61,66 @@ const IndexPage = function (props) {
         <link rel="canonical" href={intakeInfo.domainName} />
       </Helmet>
       <Hero language={language} languageToUse={languageToUse} />
-      <About
-        language={language}
-        languageToUse={languageToUse}
-        darkMode={darkMode}
-      />
       <Projects
         language={language}
         languageToUse={languageToUse}
         darkMode={darkMode}
       />
+      <About
+        language={language}
+        languageToUse={languageToUse}
+        darkMode={darkMode}
+      />
+
       <Contact language={language} languageToUse={languageToUse} />
-      <button onClick={handleDarkMode} className="dark-mode-button">
-        {darkMode ? <span> Light-mode</span> : <span> Dark-mode </span>}
-      </button>
+      <div className="set-language-fixed">
+        <button
+          onClick={() => handleSetLanguage("english")}
+          onKeyPress={() => handleSetLanguage("english")}
+          className="invisible-button"
+        >
+          <img
+            src={flagEn}
+            alt="english"
+            className={`flag ${
+              languageToUse.language === "english" ? "opaque" : "fade"
+            } `}
+          />
+        </button>
+        <button
+          onClick={() => handleSetLanguage("french")}
+          onKeyPress={() => handleSetLanguage("french")}
+          className="invisible-button"
+        >
+          <img
+            src={flagFr}
+            alt="français"
+            className={`flag ${
+              languageToUse.language === "french" ? "opaque" : "fade"
+            } `}
+          />
+        </button>
+      </div>
+      <div className="menu-container hidden-mobile ">
+        <div className="fixed-menu">
+          <Link to="/" id="top" className="menu-button">
+            TOP
+          </Link>
+          <Link to="/#about" id="top" className="menu-button">
+            ABOUT
+          </Link>
+
+          <Link to="/#projects" id="top" className="menu-button">
+            PROJECTS
+          </Link>
+          <Link to="/#contact" id="top" className="menu-button">
+            CONTACT
+          </Link>
+          <button onClick={handleDarkMode} className="menu-button">
+            {darkMode ? <span> Light-mode</span> : <span> Dark-mode </span>}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

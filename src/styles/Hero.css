@@ -1,5 +1,4 @@
 .hero {
-  width: 100vw;
   min-height: 100vh;
   background-color: var(--color-background);
   /* background-image: url("../images/hero1.jpeg");
@@ -10,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
 .hero-button {
@@ -30,8 +30,4 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }

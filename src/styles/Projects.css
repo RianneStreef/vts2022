@@ -12,9 +12,16 @@
   margin-bottom: 200px;
 }
 
+.main-project {
+  transition: margin 150ms linear;
+}
+
+.main-project:hover {
+  margin: -5px 0 5px 5px;
+  transition: margin 150ms linear;
+}
+
 .main-projects > * {
-  width: 45vw;
-  height: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -39,6 +46,14 @@
   filter: grayscale(100%);
 }
 
+.main-project-3 {
+  background-image: url("../images/project1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
 .main-project-info {
   background-color: var(--color-text);
   color: var(--color-background);
@@ -46,25 +61,76 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 150px;
   margin-bottom: -100px;
+}
+
+.other-projects {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .other-projects-list {
   display: flex;
+  flex-wrap: no-wrap;
   justify-content: space-around;
   list-style: none;
   padding-bottom: 50px;
+  width: 100%;
+  margin: 0;
+  animation: image-slider 10000ms linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
 }
 
 .partner-logo {
   width: 50px;
   margin: 0 50px;
+  transition: filter 1000ms linear;
+}
+
+.partner-logo-dark:hover {
+  filter: brightness(0.3);
+  transition: filter 700ms linear;
+}
+
+.partner-logo-light {
+  filter: brightness(0.5);
+  transition: filter 700ms linear;
+}
+
+.partner-logo-light:hover {
+  filter: brightness(2);
+  transition: filter 700ms linear;
+}
+
+iframe {
+  width: 100vw;
 }
 
 @media only screen and (min-width: 768px) {
   .main-projects {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .main-projects > * {
+    width: 30vw;
+    height: 30vw;
+  }
+  .other-projects-list {
+    animation: image-slider 50000ms linear infinite;
+  }
+}
+
+@keyframes image-slider {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -100%;
   }
 }

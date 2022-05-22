@@ -33,6 +33,23 @@ h2 {
   text-transform: uppercase;
 }
 
+.h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.custom-button {
+  background-color: var(--color-highlight);
+  color: var(--color-background);
+  font-family: "Noto";
+  border: 2px solid var(--color-highlight);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -72,8 +89,54 @@ h2 {
   display: none;
 }
 
-.dark-mode-button {
+.set-language-fixed {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-menu {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-highlight);
+  color: var(--color-background);
+  font-family: "Noto";
+  border: 2px solid var(--color-highlight);
+  border-radius: 50px;
+  padding: 10px;
+  text-decoration: none;
+  margin: auto;
+  z-index: 999;
+}
+
+.menu-button {
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.menu-button:hover {
+  background-color: #fff;
+}
+
+.hidden-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .h2 {
+    font-size: 70px;
+  }
+  .hidden-mobile {
+    display: flex;
+  }
 }

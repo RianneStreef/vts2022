@@ -8,6 +8,7 @@
 
 .intros {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -20,10 +21,17 @@
 }
 
 .photo {
-  width: 40%;
+  width: 60%;
 }
 
 .intro-text {
   text-align: center;
   color: var(--color-background);
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .intros {
+    flex-direction: row;
+  }
 }

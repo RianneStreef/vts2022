@@ -22,9 +22,9 @@ const Projects = (props) => {
       } `}
       id="projects"
     >
-      <h2>{languageToUse.projectsTitle}</h2>
+      <h2 className="h2">{languageToUse.projectsTitle}</h2>
       <div className="main-projects">
-        <div className="main-project-1">
+        <div className="main-project main-project-1">
           <div className="main-project-info">
             <p>project description</p>
             <h4>project name</h4>
@@ -33,7 +33,16 @@ const Projects = (props) => {
             </a>
           </div>
         </div>
-        <div className="main-project-2">
+        <div className="main-project main-project-2">
+          <div className="main-project-info">
+            <p>project description</p>
+            <h4>project name</h4>
+            <a href="https://leslodgesdepraly.fr" target="_blank">
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div className="main-project main-project-3">
           <div className="main-project-info">
             <p>project description</p>
             <h4>project name</h4>
@@ -46,28 +55,196 @@ const Projects = (props) => {
       <div className="other-projects">
         <ul className="other-projects-list">
           <li>
-            <img src={partner1} className="partner-logo " />
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
           <li>
-            <img src={partner2} className="partner-logo" />
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
           <li>
-            <img src={partner3} className="partner-logo" />
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
           <li>
-            <img src={partner4} className="partner-logo" />
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
           <li>
-            <img src={partner1} className="partner-logo" />
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
           <li>
-            <img src={partner2} className="partner-logo" />
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
           <li>
-            <img src={partner3} className="partner-logo" />
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
           <li>
-            <img src={partner4} className="partner-logo" />
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
           </li>
         </ul>
       </div>
