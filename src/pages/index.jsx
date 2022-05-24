@@ -29,20 +29,16 @@ const IndexPage = function (props) {
     localStorage.setItem("languageInStorage", language);
   }
 
-  console.log("languageToUse in index");
-  console.log(languageToUse);
-
   function handleDarkMode() {
     setDarkMode(!darkMode);
-    console.log(darkMode);
 
     var backgroundColor = document.documentElement.style;
     var textColor = document.documentElement.style;
     var shadowColor = document.documentElement.style;
 
     if (darkMode === true) {
-      backgroundColor.setProperty("--color-background", "#fff");
-      textColor.setProperty("--color-text", "#000");
+      backgroundColor.setProperty("--color-background", "#b59b7c");
+      textColor.setProperty("--color-text", "#fff");
       shadowColor.setProperty("--color-highlight", "#d31376");
     } else {
       backgroundColor.setProperty("--color-background", "#000");
@@ -59,8 +55,13 @@ const IndexPage = function (props) {
         <meta name="description" content={languageToUse.metaDescription} />
         <meta name="keywords" content={languageToUse.metaKeywords} />
         <link rel="canonical" href={intakeInfo.domainName} />
+        <script src="https://cdn.lordicon.com/xdjxvujz.js" />
       </Helmet>
-      <Hero language={language} languageToUse={languageToUse} />
+      <Hero
+        language={language}
+        languageToUse={languageToUse}
+        darkMode={darkMode}
+      />
       <Projects
         language={language}
         languageToUse={languageToUse}
@@ -106,12 +107,12 @@ const IndexPage = function (props) {
           <Link to="/" id="top" className="menu-button">
             TOP
           </Link>
-          <Link to="/#about" id="top" className="menu-button">
-            ABOUT
-          </Link>
 
           <Link to="/#projects" id="top" className="menu-button">
             PROJECTS
+          </Link>
+          <Link to="/#about" id="top" className="menu-button">
+            ABOUT
           </Link>
           <Link to="/#contact" id="top" className="menu-button">
             CONTACT

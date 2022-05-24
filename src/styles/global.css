@@ -48,6 +48,13 @@ h2 {
   padding: 10px;
   text-decoration: none;
   font-size: 15px;
+  transition: all 500ms ease-in;
+}
+
+.custom-button:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  transition: all 500ms ease-in;
 }
 
 .layout {
@@ -64,6 +71,7 @@ h2 {
 .flag {
   width: 25px;
   margin: 5px;
+  z-index: 999;
 }
 
 .opaque {
@@ -112,7 +120,7 @@ h2 {
   color: var(--color-background);
   font-family: "Noto";
   border: 2px solid var(--color-highlight);
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 10px;
   text-decoration: none;
   margin: auto;
@@ -120,12 +128,17 @@ h2 {
 }
 
 .menu-button {
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 10px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 500ms ease-in;
 }
 
 .menu-button:hover {
-  background-color: #fff;
+  background-color: var(--color-text);
+  color: var(--color-background);
+  transition: all 500ms ease-in;
 }
 
 .hidden-mobile {
@@ -138,5 +151,9 @@ h2 {
   }
   .hidden-mobile {
     display: flex;
+  }
+  .menu-placeholder {
+    height: 150px;
+    width: 100%;
   }
 }

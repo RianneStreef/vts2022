@@ -1,9 +1,13 @@
-.about-dark-mode {
+.about-2 {
+  background-color: var(--color-text);
+}
+
+.intros-dark-mode {
   background: linear-gradient(to bottom, #000 50%, #fff 0%);
 }
 
-.about-light-mode {
-  background: linear-gradient(to bottom, #fff 50%, #000 0%);
+.intros-light-mode {
+  background: linear-gradient(to bottom, #b59b7c 50%, #fff 0%);
 }
 
 .intros {
@@ -17,7 +21,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--color-background);
+  color: #000;
+}
+
+.intro p {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #000;
 }
 
 .photo {
@@ -26,12 +36,80 @@
 
 .intro-text {
   text-align: center;
-  color: var(--color-background);
+  color: #000;
   padding-bottom: 50px;
+  margin: 0;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service p {
+  color: #000;
+}
+
+.skills {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 50px;
+  width: 100%;
+  margin: 0;
+  animation: skills-slider 10s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.skill-logo {
+  width: 4vw;
+  margin-right: 6vw;
+  transition: filter 1000ms linear;
+}
+
+.skill-logo-dark:hover {
+  filter: brightness(0.3);
+  transition: filter 700ms linear;
+}
+
+.skill-logo-light {
+  filter: brightness(0.5);
+  transition: filter 700ms linear;
+}
+
+.skill-logo-light:hover {
+  filter: brightness(2);
+  transition: filter 700ms linear;
 }
 
 @media only screen and (min-width: 768px) {
   .intros {
     flex-direction: row;
+  }
+  .skills-list {
+    animation: skills-slider 15s linear infinite;
+  }
+}
+
+@keyframes skills-slider {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 150%;
   }
 }

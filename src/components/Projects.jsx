@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { content } from "../content/languages";
 
@@ -15,6 +15,61 @@ const Projects = (props) => {
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
   language === "dutch" ? (languageToUse = content.dutch) : null;
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const mainProjects = document.getElementById("main-projects");
+      if (mainProjects.getBoundingClientRect().y > 300) {
+        mainProjects.classList.remove("main-projects-middle");
+        mainProjects.classList.remove("main-projects-right");
+        mainProjects.classList.remove("main-projects-half-right");
+        mainProjects.classList.remove("main-projects-half-left");
+        mainProjects.classList.add("main-projects-left");
+      }
+      if (
+        mainProjects.getBoundingClientRect().y <= 300 &&
+        mainProjects.getBoundingClientRect().y >= 200
+      ) {
+        mainProjects.classList.remove("main-projects-left");
+        mainProjects.classList.remove("main-projects-right");
+        mainProjects.classList.remove("main-projects-middle");
+        mainProjects.classList.remove("main-projects-half-right");
+        mainProjects.classList.add("main-projects-half-left");
+        return;
+      }
+      if (
+        mainProjects.getBoundingClientRect().y <= 200 &&
+        mainProjects.getBoundingClientRect().y >= 100
+      ) {
+        mainProjects.classList.remove("main-projects-left");
+        mainProjects.classList.remove("main-projects-right");
+        mainProjects.classList.remove("main-projects-half-left");
+        mainProjects.classList.remove("main-projects-half-right");
+        mainProjects.classList.add("main-projects-middle");
+        return;
+      }
+      if (
+        mainProjects.getBoundingClientRect().y <= 100 &&
+        mainProjects.getBoundingClientRect().y >= 0
+      ) {
+        mainProjects.classList.remove("main-projects-left");
+        mainProjects.classList.remove("main-projects-right");
+        mainProjects.classList.remove("main-projects-middle");
+        mainProjects.classList.remove("main-projects-half-left");
+        mainProjects.classList.add("main-projects-half-right");
+        return;
+      }
+      if (mainProjects.getBoundingClientRect().y < 0) {
+        mainProjects.classList.remove("main-projects-left");
+        mainProjects.classList.remove("main-projects-middle");
+        mainProjects.classList.remove("main-projects-half-left");
+        mainProjects.classList.remove("main-projects-half-right");
+        mainProjects.classList.add("main-projects-right");
+        return;
+      }
+    });
+  });
+
   return (
     <div
       className={`projects ${
@@ -23,34 +78,12 @@ const Projects = (props) => {
       id="projects"
     >
       <h2 className="h2">{languageToUse.projectsTitle}</h2>
-      <div className="main-projects">
-        <div className="main-project main-project-1">
-          <div className="main-project-info">
-            <p>project description</p>
-            <h4>project name</h4>
-            <a href="https://leslodgesdepraly.fr" target="_blank">
-              Learn more
-            </a>
-          </div>
-        </div>
-        <div className="main-project main-project-2">
-          <div className="main-project-info">
-            <p>project description</p>
-            <h4>project name</h4>
-            <a href="https://leslodgesdepraly.fr" target="_blank">
-              Learn more
-            </a>
-          </div>
-        </div>
-        <div className="main-project main-project-3">
-          <div className="main-project-info">
-            <p>project description</p>
-            <h4>project name</h4>
-            <a href="https://leslodgesdepraly.fr" target="_blank">
-              Learn more
-            </a>
-          </div>
-        </div>
+      <div className="main-projects" id="main-projects">
+        <div className="main-project main-project-1" />
+        <div className="main-project main-project-2" />
+        <div className="main-project main-project-3" />
+        <div className="main-project main-project-4" />
+        <div className="main-project main-project-5" />
       </div>
       <div className="other-projects">
         <ul className="other-projects-list">
@@ -241,6 +274,86 @@ const Projects = (props) => {
           <li>
             <img
               src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner2}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner3}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner4}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner1}
+              className={`partner-logo ${
+                darkMode ? "partner-logo-dark" : "partner-logo-light"
+              }`}
+            />
+          </li>
+          <li>
+            <img
+              src={partner2}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}

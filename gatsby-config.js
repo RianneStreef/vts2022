@@ -11,6 +11,18 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "VTS Webdesign",
+        short_name: "VTS Webdesign",
+        start_url: "/",
+        background_color: "#000",
+        theme_color: "#40c8e0",
+        display: "standalone",
+        icon: "src/images/icon.png",
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",

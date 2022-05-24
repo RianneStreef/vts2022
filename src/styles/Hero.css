@@ -1,15 +1,22 @@
 .hero {
   min-height: 100vh;
   background-color: var(--color-background);
-  /* background-image: url("../images/hero1.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+
+.hero-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 50%;
 }
 
 .hero-button {
@@ -23,10 +30,28 @@
 .hero-button-blue {
   background-color: var(--color-highlight);
   color: var(--color-background);
+  transition: all 500ms ease-in;
 }
+.hero-button-blue:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  transition: all 500ms ease-in;
+}
+
 .hero-button-transparent {
   background-color: transparent;
   color: var(--color-text);
+  transition: all 500ms ease-in;
+}
+
+.hero-button-transparent:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  transition: all 500ms ease-in;
+}
+
+.hero-links {
+  margin-top: 50px;
 }
 
 @media only screen and (min-width: 768px) {

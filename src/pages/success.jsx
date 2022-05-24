@@ -15,8 +15,6 @@ const SuccessPage = function (props) {
     ? (languageToUse = content.english)
     : (languageToUse = content.french);
 
-  console.log("languageToUse in success");
-  console.log(languageToUse);
   return (
     <div className="success">
       <Helmet>

@@ -17,6 +17,10 @@ export const french = {
   intro:
     "2 indépendants pour répondre à tous vos projets digitaux (site web fully responsive, exclusive website Appview, newsletter, bannière web, compagne Adwords, ..) ",
 
+  designInfo: "Design description",
+  codeInfo: "Code description",
+  otherInfo: "Other description",
+
   projectsTitle: "Nos Réalisations",
   contactTitle: "Discutons!",
 
