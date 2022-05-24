@@ -4,6 +4,12 @@ import { content } from "../content/languages";
 
 import "../styles/Projects.css";
 
+import project1 from "../images/projects/project1.jpg";
+import project2 from "../images/projects/project2.jpg";
+import project3 from "../images/projects/project3.jpg";
+import project4 from "../images/projects/project4.jpg";
+import project5 from "../images/projects/project5.jpg";
+
 import partner1 from "../images/partner1.png";
 import partner2 from "../images/partner2.png";
 import partner3 from "../images/partner3.png";
@@ -79,11 +85,16 @@ const Projects = (props) => {
     >
       <h2 className="h2">{languageToUse.projectsTitle}</h2>
       <div className="main-projects" id="main-projects">
-        <div className="main-project main-project-1" />
+        {/* <div className="main-project main-project-1" />
         <div className="main-project main-project-2" />
         <div className="main-project main-project-3" />
         <div className="main-project main-project-4" />
-        <div className="main-project main-project-5" />
+        <div className="main-project main-project-5" /> */}
+        <img src={project1} className=" main-project" />
+        <img src={project2} className=" main-project" />
+        <img src={project3} className=" main-project" />
+        <img src={project4} className=" main-project" />
+        <img src={project5} className=" main-project" />
       </div>
       <div className="other-projects">
         <ul className="other-projects-list">

@@ -17,11 +17,11 @@
 
 .main-project {
   transition: margin 150ms linear;
-  overflow: hidden;
+
   width: 25vw;
   height: 25vw;
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
@@ -35,31 +35,31 @@
 }
 
 .main-projects-left {
+  margin-left: -500px;
+  margin-right: 500px;
+}
+
+.main-projects-half-left {
+  margin-left: -400px;
+  margin-right: 400px;
+}
+
+.main-projects-middle {
+  margin-left: -300px;
+  margin-right: 300px;
+}
+
+.main-projects-half-right {
+  margin-left: -200px;
+  margin-right: 200px;
+}
+
+.main-projects-right {
   margin-left: -100px;
   margin-right: 100px;
 }
 
-.main-projects-half-left {
-  margin-left: -50px;
-  margin-right: 50px;
-}
-
-.main-projects-middle {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.main-projects-half-right {
-  margin-left: 50px;
-  margin-right: -50px;
-}
-
-.main-projects-right {
-  margin-left: 100px;
-  margin-right: -100px;
-}
-
-.main-project-1 {
+/* .main-project-1 {
   background-image: url("../images/projects/project1.jpg");
 }
 
@@ -77,7 +77,7 @@
 
 .main-project-5 {
   background-image: url("../images/projects/project5.jpg");
-}
+} */
 
 .main-project-info {
   background-color: var(--color-text);
@@ -125,12 +125,12 @@
 }
 
 .partner-logo-light {
-  filter: brightness(0.5);
+  filter: brightness(0);
   transition: filter 700ms linear;
 }
 
 .partner-logo-light:hover {
-  filter: brightness(2);
+  filter: brightness(0.8);
   transition: filter 700ms linear;
 }
 

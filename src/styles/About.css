@@ -86,12 +86,12 @@
 }
 
 .skill-logo-light {
-  filter: brightness(0.5);
+  filter: brightness(0);
   transition: filter 700ms linear;
 }
 
 .skill-logo-light:hover {
-  filter: brightness(2);
+  filter: brightness(0.8);
   transition: filter 700ms linear;
 }
 

@@ -117,8 +117,11 @@ const IndexPage = function (props) {
           <Link to="/#contact" id="top" className="menu-button">
             CONTACT
           </Link>
-          <button onClick={handleDarkMode} className="menu-button">
-            {darkMode ? <span> Light-mode</span> : <span> Dark-mode </span>}
+          <button
+            onClick={handleDarkMode}
+            className="menu-button menu-button-button "
+          >
+            {darkMode ? <span> LIGHT-MODE</span> : <span> DARK-MODE </span>}
           </button>
         </div>
       </div>

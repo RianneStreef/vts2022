@@ -130,14 +130,27 @@ h2 {
 .menu-button {
   border-radius: 5px;
   padding: 10px;
-  color: var(--color-text);
+  color: var(--color-background);
   text-decoration: none;
   transition: all 500ms ease-in;
+  border: none;
 }
-
 .menu-button:hover {
   background-color: var(--color-text);
   color: var(--color-background);
+  transition: all 500ms ease-in;
+}
+
+.menu-button-button {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  transition: all 500ms ease-in;
+  font-size: 16px;
+}
+
+.menu-button-button:hover {
+  background-color: var(--color-background);
+  color: var(--color-text);
   transition: all 500ms ease-in;
 }
 
