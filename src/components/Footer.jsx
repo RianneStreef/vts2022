@@ -6,6 +6,8 @@ import logoFooterWhite from "../images/logo-white.png";
 
 import "../styles/Footer.css";
 
+import Copyright from "../components/Copyright";
+
 const Footer = (props) => {
   let { language, languageToUse, darkMode } = props;
 
@@ -31,6 +33,7 @@ const Footer = (props) => {
         </div>
       </div>
       <div className="menu-placeholder" />
+      <Copyright language={language} languageToUse={languageToUse} />
     </div>
   );
 };

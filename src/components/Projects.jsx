@@ -85,16 +85,28 @@ const Projects = (props) => {
     >
       <h2 className="h2">{languageToUse.projectsTitle}</h2>
       <div className="main-projects" id="main-projects">
-        {/* <div className="main-project main-project-1" />
-        <div className="main-project main-project-2" />
-        <div className="main-project main-project-3" />
-        <div className="main-project main-project-4" />
-        <div className="main-project main-project-5" /> */}
-        <img src={project1} className=" main-project" />
-        <img src={project2} className=" main-project" />
-        <img src={project3} className=" main-project" />
+        <a
+          href="https://www.sebgourmet-traiteur.com"
+          target="blank"
+          className=" hidden-mobile"
+        >
+          <img src={project1} className=" main-project" />
+        </a>
+        <a href="https://www.claireturner-design.com" target="blank">
+          <img src={project2} className=" main-project" />
+        </a>
+        <a href="https://leslodgesdepraly.fr/" target="blank">
+          <img src={project3} className=" main-project" />
+        </a>
         <img src={project4} className=" main-project" />
-        <img src={project5} className=" main-project" />
+
+        <a
+          href="https://lafaceouest.com"
+          target="blank"
+          className=" hidden-mobile"
+        >
+          <img src={project5} className=" main-project" />
+        </a>
       </div>
       <div className="other-projects">
         <ul className="other-projects-list">

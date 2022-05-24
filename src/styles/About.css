@@ -43,7 +43,15 @@
 
 .services {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -67,7 +75,7 @@
   padding-bottom: 50px;
   width: 100%;
   margin: 0;
-  animation: skills-slider 10s linear infinite;
+  animation: skills-slider-mobile 10s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
@@ -75,7 +83,7 @@
 }
 
 .skill-logo {
-  width: 4vw;
+  width: 10vw;
   margin-right: 6vw;
   transition: filter 1000ms linear;
 }
@@ -101,6 +109,22 @@
   }
   .skills-list {
     animation: skills-slider 15s linear infinite;
+  }
+  .skill-logo {
+    width: 4vw;
+  }
+  .services {
+    flex-direction: row;
+  }
+}
+
+@keyframes skills-slider-mobile {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 150%;
   }
 }
 

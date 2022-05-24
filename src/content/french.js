@@ -31,4 +31,7 @@ export const french = {
   send: "Envoyer",
 
   thanks: "Merci pour votre message!",
+
+  copyright: "VTS Web Design - Tous droits réservés.",
+  mentionsLegal: "Mentions Légales",
 };

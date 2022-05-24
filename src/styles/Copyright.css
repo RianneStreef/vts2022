@@ -1,0 +1,10 @@
+.copyright {
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 10px;
+  color: var(--color-text);
+}
+
+.copyright a {
+  color: var(--color-text);
+}

@@ -16,7 +16,7 @@
 }
 
 .hero-image {
-  width: 50%;
+  width: 100%;
 }
 
 .hero-button {
@@ -55,4 +55,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-image {
+    width: 100%;
+  }
 }
