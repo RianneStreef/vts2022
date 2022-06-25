@@ -5,10 +5,11 @@
 }
 
 :root {
-  --color-highlight: #40c8e0;
+  --color-highlight: #b59b7c;
   --color-shadow: #eaeaea;
   --color-text: #fff;
   --color-background: #000;
+  --color-background-transparent: rgba(255, 255, 255, 0.75);
 }
 
 html {
@@ -29,7 +30,6 @@ main {
 }
 
 h2 {
-  color: var(--color-highlight);
   text-transform: uppercase;
 }
 
@@ -116,10 +116,10 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-highlight);
+  background-color: var(--color-background-transparent);
   color: var(--color-background);
   font-family: "Noto";
-  border: 2px solid var(--color-highlight);
+  border: 2px solid var(--color-text);
   border-radius: 5px;
   padding: 10px;
   text-decoration: none;
@@ -136,13 +136,13 @@ h2 {
   border: none;
 }
 .menu-button:hover {
-  background-color: var(--color-text);
+  background-color: var(--color-highlight);
   color: var(--color-background);
   transition: all 500ms ease-in;
 }
 
 .menu-button-button {
-  background-color: var(--color-text);
+  background-color: var(--color-highlight);
   color: var(--color-background);
   transition: all 500ms ease-in;
   font-size: 16px;

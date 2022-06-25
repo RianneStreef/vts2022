@@ -34,7 +34,6 @@ const About = (props) => {
       className={`about ${darkMode ? "about-dark-mode" : "about-light-mode"} `}
       id="about"
     >
-      <h2 className="h2">{languageToUse.aboutTitle}</h2>
       <div
         className={`intros ${
           darkMode ? "intros-dark-mode" : "intros-light-mode"
@@ -42,44 +41,79 @@ const About = (props) => {
       >
         <div className="intro">
           <img src={Xav} alt="Xavier" className="photo" />
-          <p>{languageToUse.xav}</p>
+          <p className="names">{languageToUse.xav}</p>
         </div>
         <div className="intro">
           <img src={Xav} alt="Xavier" className="photo" />
-          <p>{languageToUse.ri}</p>
+          <p className="names">{languageToUse.ri}</p>
         </div>
       </div>
       <div className="about-2">
         <p className="intro-text">{languageToUse.intro}</p>
-        <div className="services">
-          <div className="service">
-            <lord-icon
-              src="https://cdn.lordicon.com/sygggnra.json"
-              trigger="hover"
-              className="service-icon"
-              style={{ width: "100px", height: "100px" }}
-            />
-            <p>{languageToUse.designInfo}</p>
+        {darkMode ? (
+          <div className="services">
+            <div className="service">
+              <lord-icon
+                src="https://cdn.lordicon.com/sygggnra.json"
+                trigger="hover"
+                className="service-icon"
+                colors="primary:#ffffff"
+                style={{ width: "100px", height: "100px" }}
+              />
+              <p>{languageToUse.designInfo}</p>
+            </div>
+            <div className="service">
+              <lord-icon
+                src="https://cdn.lordicon.com/etllbcfy.json"
+                trigger="hover"
+                className="service-icon"
+                colors="primary:#ffffff"
+                style={{ width: "100px", height: "100px" }}
+              />
+              <p>{languageToUse.codeInfo}</p>
+            </div>
+            <div className="service">
+              <lord-icon
+                src="https://cdn.lordicon.com/auvicynv.json"
+                trigger="hover"
+                className="service-icon"
+                colors="primary:#ffffff"
+                style={{ width: "100px", height: "100px" }}
+              />
+              <p>{languageToUse.otherInfo}</p>
+            </div>
           </div>
-          <div className="service">
-            <lord-icon
-              src="https://cdn.lordicon.com/etllbcfy.json"
-              trigger="hover"
-              className="service-icon"
-              style={{ width: "100px", height: "100px" }}
-            />
-            <p>{languageToUse.codeInfo}</p>
+        ) : (
+          <div className="services">
+            <div className="service">
+              <lord-icon
+                src="https://cdn.lordicon.com/sygggnra.json"
+                trigger="hover"
+                className="service-icon"
+                style={{ width: "100px", height: "100px" }}
+              />
+              <p>{languageToUse.designInfo}</p>
+            </div>
+            <div className="service">
+              <lord-icon
+                src="https://cdn.lordicon.com/etllbcfy.json"
+                trigger="hover"
+                className="service-icon"
+                style={{ width: "100px", height: "100px" }}
+              />
+              <p>{languageToUse.codeInfo}</p>
+            </div>
+            <div className="service">
+              <lord-icon
+                src="https://cdn.lordicon.com/auvicynv.json"
+                trigger="hover"
+                className="service-icon"
+                style={{ width: "100px", height: "100px" }}
+              />
+              <p>{languageToUse.otherInfo}</p>
+            </div>
           </div>
-          <div className="service">
-            <lord-icon
-              src="https://cdn.lordicon.com/auvicynv.json"
-              trigger="hover"
-              className="service-icon"
-              style={{ width: "100px", height: "100px" }}
-            />
-            <p>{languageToUse.otherInfo}</p>
-          </div>
-        </div>
+        )}
         <div className="skills">
           <ul className="skills-list">
             <li>

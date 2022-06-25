@@ -33,17 +33,23 @@ const IndexPage = function (props) {
     setDarkMode(!darkMode);
 
     var backgroundColor = document.documentElement.style;
+    var backgroundColorTransparent = document.documentElement.style;
     var textColor = document.documentElement.style;
-    var shadowColor = document.documentElement.style;
 
     if (darkMode === true) {
-      backgroundColor.setProperty("--color-background", "#b59b7c");
-      textColor.setProperty("--color-text", "#fff");
-      shadowColor.setProperty("--color-highlight", "#d31376");
+      backgroundColor.setProperty("--color-background", "#fff");
+      backgroundColorTransparent.setProperty(
+        "--color-background-transparent",
+        "rgb(0, 0, 0, 0.75)"
+      );
+      textColor.setProperty("--color-text", "#000");
     } else {
       backgroundColor.setProperty("--color-background", "#000");
+      backgroundColorTransparent.setProperty(
+        "--color-background-transparent",
+        "rgb(255, 255, 255, 0.75)"
+      );
       textColor.setProperty("--color-text", "#fff");
-      shadowColor.setProperty("--color-highlight", "#40c8e0");
     }
   }
 

@@ -83,7 +83,6 @@ const Projects = (props) => {
       } `}
       id="projects"
     >
-      <h2 className="h2">{languageToUse.projectsTitle}</h2>
       <div className="main-projects" id="main-projects">
         <a
           href="https://www.sebgourmet-traiteur.com"

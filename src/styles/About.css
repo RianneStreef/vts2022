@@ -1,13 +1,9 @@
-.about-2 {
-  background-color: var(--color-text);
-}
-
 .intros-dark-mode {
   background: linear-gradient(to bottom, #000 50%, #fff 0%);
 }
 
 .intros-light-mode {
-  background: linear-gradient(to bottom, #b59b7c 50%, #fff 0%);
+  background: linear-gradient(to bottom, #fff 50%, #000 0%);
 }
 
 .intros {
@@ -21,13 +17,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #000;
 }
 
 .intro p {
   font-size: 20px;
   font-weight: bolder;
-  color: #000;
+}
+
+.names {
+  color: var(--color-background);
 }
 
 .photo {
@@ -36,35 +34,32 @@
 
 .intro-text {
   text-align: center;
-  color: #000;
   padding-bottom: 50px;
   margin: 0;
+  margin-top: 50px;
 }
 
 .services {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
 }
 
 .service {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-}
-
-.service p {
-  color: #000;
+  width: 30%;
 }
 
 .skills {
   position: relative;
-  height: 100px;
+  height: 170px;
   width: 100%;
   overflow: hidden;
   margin-top: 100px;
+  background-color: #fff;
 }
 
 .skills-list {
@@ -72,7 +67,7 @@
   flex-wrap: no-wrap;
   justify-content: space-evenly;
   list-style: none;
-  padding-bottom: 50px;
+  padding: 50px;
   width: 100%;
   margin: 0;
   animation: skills-slider-mobile 10s linear infinite;
@@ -106,9 +101,10 @@
 @media only screen and (min-width: 768px) {
   .intros {
     flex-direction: row;
+    padding-top: 50px;
   }
   .skills-list {
-    animation: skills-slider 15s linear infinite;
+    animation: skills-slider 20s linear infinite;
   }
   .skill-logo {
     width: 4vw;
