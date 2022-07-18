@@ -18,7 +18,11 @@ const Footer = (props) => {
   return (
     <div className="footer">
       <div className="menu-placeholder" />
-      <Copyright language={language} languageToUse={languageToUse} />
+      <Copyright
+        language={language}
+        languageToUse={languageToUse}
+        darkMode={darkMode}
+      />
     </div>
   );
 };
