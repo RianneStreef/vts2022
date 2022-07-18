@@ -18,6 +18,11 @@ import Footer from "../components/Footer";
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
 
+import top from "../images/top.svg";
+import topWhite from "../images/top-white.png";
+import sun from "../images/sun.svg";
+import moon from "../images/moon-white.png";
+
 const IndexPage = function (props) {
   let { language, setLanguage, languageToUse, darkMode, setDarkMode } = props;
 
@@ -138,6 +143,20 @@ const IndexPage = function (props) {
         languageToUse={languageToUse}
         darkMode={darkMode}
       />
+      <div className="mobile-menu mobile-only">
+        {darkMode ? (
+          <img src={moon} className="dark-mode-icon" onClick={handleDarkMode} />
+        ) : (
+          <img src={sun} className="dark-mode-icon" onClick={handleDarkMode} />
+        )}
+        <Link to="/" className="top-link ">
+          {darkMode ? (
+            <img src={topWhite} className="top-link" />
+          ) : (
+            <img src={top} className="top-link" />
+          )}
+        </Link>
+      </div>
     </div>
   );
 };
