@@ -4,8 +4,6 @@ import { content } from "../content/languages";
 
 import "../styles/About.css";
 
-import Xav from "../images/xav.png";
-
 import skill1 from "../images/skills/ADOBE-icon.png";
 import skill2 from "../images/skills/AI-icon.png";
 import skill3 from "../images/skills/Apple-icon.png";
@@ -34,20 +32,6 @@ const About = (props) => {
       className={`about ${darkMode ? "about-dark-mode" : "about-light-mode"} `}
       id="about"
     >
-      {/* <div
-        className={`intros ${
-          darkMode ? "intros-dark-mode" : "intros-light-mode"
-        } `}
-      >
-        <div className="intro">
-          <img src={Xav} alt="Xavier" className="photo" />
-          <p className="names">{languageToUse.xav}</p>
-        </div>
-        <div className="intro">
-          <img src={Xav} alt="Xavier" className="photo" />
-          <p className="names">{languageToUse.ri}</p>
-        </div>
-      </div> */}
       <div className="about-2">
         <p className="intro-text">{languageToUse.intro}</p>
         {darkMode ? (

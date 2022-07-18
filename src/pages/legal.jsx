@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 
 import intakeInfo from "../content/intake";
@@ -6,8 +6,9 @@ import intakeInfo from "../content/intake";
 import "../styles/legal.css";
 
 const LegalPage = () => {
-  const mainProjects = document.getElementById("main-projects");
-
+  useEffect(() => {
+    const mainProjects = document.getElementById("main-projects");
+  });
   return (
     <>
       <div className="legal">

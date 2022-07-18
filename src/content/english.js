@@ -11,18 +11,15 @@ export const english = {
 
   heroTitle: "Creator of digital solutions",
 
-  aboutTitle: "About us",
-  xav: "Xavier - the graphic designer",
-  ri: "Rianne - the web developer",
   intro:
-    "2 freelancers to create all your digital projects (fully responsive website, exclusive website Appview, newsletter, web banners, Adwords campaign, ..) ",
+    "VTS Webdesign is the synergy of 2 freelancers, Xavier the graphic designer and Rianne the web developer, to answer all your communication projects: Print and Web. Specialized in the tourism and leisure sectors, we conceive the digital solutions of your communication.",
 
   designInfo:
-    "Graphic design is a great way to understand what you want to share with the world. Whether it's a new logo, a flyer for an upcoming event, or a website for your business, we can help you reach your goals. We have experience in delivering high-quality designs for any project and will work with you until it's just right.",
+    "Design of visual identity, creative and personalized communication: illustration, poster, publishing, packaging, logo, advertising, web design, signs...",
   codeInfo:
-    "After the design is finished it can be converted into a fully responsive website according to SEO principles. There are possibilities to connect your website to a Content Management System, so you can update content yourself.",
+    "Creation of websites and web applications. Diagnosis and development of your existing media. Implementation of new functionalities: back office, planning, reservation.",
   otherInfo:
-    "Next to creating and developing, we can help you to keep track of visitors on your website, to keep your website up to date, advise you on online strategies.  ",
+    "Targeted expertise: UI/UX, App View, newsletter, Google Ads campaign, SEO, personalized follow-up...",
 
   projectsTitle: "Our Realisations",
   contactTitle: "Let's Talk!",

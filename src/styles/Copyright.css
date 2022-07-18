@@ -3,8 +3,24 @@
   font-size: 0.7em;
   line-height: 10px;
   color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .copyright a {
   color: var(--color-text);
+}
+
+.footer-image {
+  width: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .copyright {
+    flex-direction: row;
+  }
+  .footer-image {
+    margin-right: 20px;
+  }
 }
