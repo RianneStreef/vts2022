@@ -33,7 +33,7 @@ const About = (props) => {
       id="about"
     >
       <div className="about-2">
-        <p className="intro-text">{languageToUse.intro}</p>
+        <p className="intro-text">"{languageToUse.intro}"</p>
         {darkMode ? (
           <div className="services">
             <div className="service">

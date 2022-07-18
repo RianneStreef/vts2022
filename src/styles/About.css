@@ -36,6 +36,8 @@
   text-align: center;
   padding: 50px;
   margin: 0;
+  font-size: 20px;
+  line-height: 35px;
 }
 
 .services {
@@ -49,7 +51,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 30%;
   padding: 30px;
   text-align: justify;
 }
@@ -115,6 +116,9 @@
   }
   .intro-text {
     font-size: 40px;
+  }
+  .service {
+    width: 30%;
   }
 }
 
