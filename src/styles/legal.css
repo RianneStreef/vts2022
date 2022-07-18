@@ -1,3 +1,11 @@
 .legal {
   margin: 150px 50px 50px 50px;
 }
+
+.legal a {
+  color: var(--color-text);
+}
+
+.legal a:visited {
+  color: var(--color-text);
+}

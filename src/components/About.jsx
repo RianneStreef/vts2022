@@ -34,7 +34,7 @@ const About = (props) => {
       className={`about ${darkMode ? "about-dark-mode" : "about-light-mode"} `}
       id="about"
     >
-      <div
+      {/* <div
         className={`intros ${
           darkMode ? "intros-dark-mode" : "intros-light-mode"
         } `}
@@ -47,7 +47,7 @@ const About = (props) => {
           <img src={Xav} alt="Xavier" className="photo" />
           <p className="names">{languageToUse.ri}</p>
         </div>
-      </div>
+      </div> */}
       <div className="about-2">
         <p className="intro-text">{languageToUse.intro}</p>
         {darkMode ? (

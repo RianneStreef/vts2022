@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "./Header";
-import Footer from "./Footer";
-
 const Layout = ({ children }) => {
   let [language, setLanguage] = useState("french");
   let languageToUse = "";
@@ -31,21 +28,7 @@ const Layout = ({ children }) => {
   );
   return (
     <div className="layout">
-      {/* <Header
-        language={language}
-        setLanguage={setLanguage}
-        languageToUse={languageToUse}
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-      /> */}
       <section className="main">{childrenWithProps}</section>
-
-      <Footer
-        language={language}
-        setLanguage={setLanguage}
-        languageToUse={languageToUse}
-        darkMode={darkMode}
-      />
     </div>
   );
 };

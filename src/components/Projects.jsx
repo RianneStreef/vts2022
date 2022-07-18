@@ -77,35 +77,36 @@ const Projects = (props) => {
   });
 
   return (
-    <div
-      className={`projects ${
-        darkMode ? "projects-dark-mode" : "projects-light-mode"
-      } `}
-      id="projects"
-    >
-      <div className="main-projects" id="main-projects">
-        <a
-          href="https://www.sebgourmet-traiteur.com"
-          target="blank"
-          className=" hidden-mobile"
-        >
-          <img src={project1} className=" main-project" />
-        </a>
-        <a href="https://www.claireturner-design.com" target="blank">
-          <img src={project2} className=" main-project" />
-        </a>
-        <a href="https://leslodgesdepraly.fr/" target="blank">
-          <img src={project3} className=" main-project" />
-        </a>
-        <img src={project4} className=" main-project" />
+    <div className="projects" id="projects">
+      <div
+        className={` ${
+          darkMode ? "main-projects-dark-mode" : "main-projects-light-mode"
+        } `}
+      >
+        <div className="main-projects" id="main-projects">
+          <a
+            href="https://www.sebgourmet-traiteur.com"
+            target="blank"
+            className=" hidden-mobile"
+          >
+            <img src={project1} className=" main-project" />
+          </a>
+          <a href="https://www.claireturner-design.com" target="blank">
+            <img src={project2} className=" main-project" />
+          </a>
+          <a href="https://leslodgesdepraly.fr/" target="blank">
+            <img src={project3} className=" main-project" />
+          </a>
+          <img src={project4} className=" main-project" />
 
-        <a
-          href="https://lafaceouest.com"
-          target="blank"
-          className=" hidden-mobile"
-        >
-          <img src={project5} className=" main-project" />
-        </a>
+          <a
+            href="https://lafaceouest.com"
+            target="blank"
+            className=" hidden-mobile"
+          >
+            <img src={project5} className=" main-project" />
+          </a>
+        </div>
       </div>
       <div className="other-projects">
         <ul className="other-projects-list">

@@ -22,7 +22,7 @@ export const french = {
   codeInfo:
     "After the design is finished it can be converted into a fully responsive website according to SEO principles. There are possibilities to connect your website to qa Content Management System, so you can update content yourself.",
   otherInfo:
-    "Next to creating and developing, we can help you to keep track of visitors on your website, to keep your website up to date, or start an other project to support your company.  ",
+    "Next to creating and developing, we can help you to keep track of visitors on your website, to keep your website up to date, advise you on online strategies.  ",
 
   projectsTitle: "Nos Réalisations",
   contactTitle: "Let's Talk!",

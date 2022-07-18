@@ -38,10 +38,10 @@ const Hero = (props) => {
       )}
       <div className="hero-links">
         <Link to="/#contact" className="hero-button hero-button-blue">
-          Contact Us!
+          {languageToUse.contactTitle}
         </Link>
         <Link to="/#projects" className="hero-button hero-button-transparent">
-          Partners
+          {languageToUse.projects}
         </Link>
       </div>
     </div>

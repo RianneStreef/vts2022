@@ -6,10 +6,13 @@ import intakeInfo from "../content/intake";
 import "../styles/legal.css";
 
 const LegalPage = () => {
+  const mainProjects = document.getElementById("main-projects");
+
   return (
     <>
-      <div className="header-placeholder" />
       <div className="legal">
+        <div className="main-projects" id="main-projects" />
+
         <h2>Informations légales</h2>
         <h3>1. Présentation du site.</h3>
         <p>

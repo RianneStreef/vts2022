@@ -13,6 +13,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 import flagEn from "../images/icon-en.png";
 import flagFr from "../images/icon-fr.png";
@@ -40,7 +41,7 @@ const IndexPage = function (props) {
       backgroundColor.setProperty("--color-background", "#fff");
       backgroundColorTransparent.setProperty(
         "--color-background-transparent",
-        "rgb(0, 0, 0, 0.75)"
+        "rgb(0, 0, 0, 0.50)"
       );
       textColor.setProperty("--color-text", "#000");
     } else {
@@ -131,6 +132,12 @@ const IndexPage = function (props) {
           </button>
         </div>
       </div>
+      <Footer
+        language={language}
+        setLanguage={setLanguage}
+        languageToUse={languageToUse}
+        darkMode={darkMode}
+      />
     </div>
   );
 };

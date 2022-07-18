@@ -1,11 +1,11 @@
 .projects {
   overflow: hidden;
 }
-.projects-dark-mode {
+.main-projects-dark-mode {
   background: linear-gradient(to bottom, #000 50%, #fff 0%);
 }
 
-.projects-light-mode {
+.main-projects-light-mode {
   background: linear-gradient(to bottom, #000 50%, #fff 0%);
 }
 
@@ -13,6 +13,8 @@
   display: flex;
   margin-bottom: 50px;
   transition: all 500ms linear;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .main-projects-left {
@@ -153,7 +155,7 @@ iframe {
   }
 
   .other-projects-list {
-    animation: image-slider 20s linear infinite;
+    animation: image-slider 40s linear infinite;
   }
   .partner-logo {
     width: 4vw;
