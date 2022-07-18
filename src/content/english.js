@@ -5,8 +5,7 @@ export const english = {
   metaDescription: "French  description",
   metaKeywords: "French  keywords",
 
-  about: "A Propos",
-  projects: "Projets",
+  projects: "Projects",
   contact: "Contact",
 
   heroTitle: "Creator of digital solutions",
@@ -21,7 +20,6 @@ export const english = {
   otherInfo:
     "Targeted expertise: UI/UX, App View, newsletter, Google Ads campaign, SEO, personalized follow-up...",
 
-  projectsTitle: "Our Realisations",
   contactTitle: "Let's Talk!",
 
   contact: "Contact",
@@ -30,9 +28,6 @@ export const english = {
   email: "Email",
   message: "Message",
   send: "Send",
-
-  quote:
-    "Créateurs de solutions digitales à taille humain. Site web fully responsive, spécialisé dans les secteurs de tourisme et loisirs, avec un suivie personel.",
 
   thanks: "Thank you for your message!",
 

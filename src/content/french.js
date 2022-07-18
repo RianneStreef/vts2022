@@ -21,7 +21,6 @@ export const french = {
   otherInfo:
     "Expertise ciblée : UI/UX, App View, newsletter, campagne Google Ads, SEO, suivi personnalisé...",
 
-  projectsTitle: "Nos Réalisations",
   contactTitle: "Let's Talk!",
 
   contactIntro: "Contact intro",
