@@ -11,6 +11,7 @@
 
 .main-projects {
   display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
   transition: all 500ms linear;
   padding-top: 50px;
@@ -104,7 +105,7 @@
 }
 
 .partner-logo-light {
-  filter: brightness(0);
+  filter: brightness(0.5);
   transition: filter 700ms linear;
 }
 

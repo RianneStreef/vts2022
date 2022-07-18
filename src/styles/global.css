@@ -158,6 +158,10 @@ h2 {
   display: none;
 }
 
+.desktop-only {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .h2 {
     font-size: 70px;
@@ -168,5 +172,13 @@ h2 {
   .menu-placeholder {
     height: 150px;
     width: 100%;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
   }
 }

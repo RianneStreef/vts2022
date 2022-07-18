@@ -25,53 +25,55 @@ const Projects = (props) => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const mainProjects = document.getElementById("main-projects");
-      if (mainProjects.getBoundingClientRect().y > 300) {
-        mainProjects.classList.remove("main-projects-middle");
-        mainProjects.classList.remove("main-projects-right");
-        mainProjects.classList.remove("main-projects-half-right");
-        mainProjects.classList.remove("main-projects-half-left");
-        mainProjects.classList.add("main-projects-left");
-      }
-      if (
-        mainProjects.getBoundingClientRect().y <= 300 &&
-        mainProjects.getBoundingClientRect().y >= 200
-      ) {
-        mainProjects.classList.remove("main-projects-left");
-        mainProjects.classList.remove("main-projects-right");
-        mainProjects.classList.remove("main-projects-middle");
-        mainProjects.classList.remove("main-projects-half-right");
-        mainProjects.classList.add("main-projects-half-left");
-        return;
-      }
-      if (
-        mainProjects.getBoundingClientRect().y <= 200 &&
-        mainProjects.getBoundingClientRect().y >= 100
-      ) {
-        mainProjects.classList.remove("main-projects-left");
-        mainProjects.classList.remove("main-projects-right");
-        mainProjects.classList.remove("main-projects-half-left");
-        mainProjects.classList.remove("main-projects-half-right");
-        mainProjects.classList.add("main-projects-middle");
-        return;
-      }
-      if (
-        mainProjects.getBoundingClientRect().y <= 100 &&
-        mainProjects.getBoundingClientRect().y >= 0
-      ) {
-        mainProjects.classList.remove("main-projects-left");
-        mainProjects.classList.remove("main-projects-right");
-        mainProjects.classList.remove("main-projects-middle");
-        mainProjects.classList.remove("main-projects-half-left");
-        mainProjects.classList.add("main-projects-half-right");
-        return;
-      }
-      if (mainProjects.getBoundingClientRect().y < 0) {
-        mainProjects.classList.remove("main-projects-left");
-        mainProjects.classList.remove("main-projects-middle");
-        mainProjects.classList.remove("main-projects-half-left");
-        mainProjects.classList.remove("main-projects-half-right");
-        mainProjects.classList.add("main-projects-right");
-        return;
+      if (window.innerWidth > 768) {
+        if (mainProjects.getBoundingClientRect().y > 300) {
+          mainProjects.classList.remove("main-projects-middle");
+          mainProjects.classList.remove("main-projects-right");
+          mainProjects.classList.remove("main-projects-half-right");
+          mainProjects.classList.remove("main-projects-half-left");
+          mainProjects.classList.add("main-projects-left");
+        }
+        if (
+          mainProjects.getBoundingClientRect().y <= 300 &&
+          mainProjects.getBoundingClientRect().y >= 200
+        ) {
+          mainProjects.classList.remove("main-projects-left");
+          mainProjects.classList.remove("main-projects-right");
+          mainProjects.classList.remove("main-projects-middle");
+          mainProjects.classList.remove("main-projects-half-right");
+          mainProjects.classList.add("main-projects-half-left");
+          return;
+        }
+        if (
+          mainProjects.getBoundingClientRect().y <= 200 &&
+          mainProjects.getBoundingClientRect().y >= 100
+        ) {
+          mainProjects.classList.remove("main-projects-left");
+          mainProjects.classList.remove("main-projects-right");
+          mainProjects.classList.remove("main-projects-half-left");
+          mainProjects.classList.remove("main-projects-half-right");
+          mainProjects.classList.add("main-projects-middle");
+          return;
+        }
+        if (
+          mainProjects.getBoundingClientRect().y <= 100 &&
+          mainProjects.getBoundingClientRect().y >= 0
+        ) {
+          mainProjects.classList.remove("main-projects-left");
+          mainProjects.classList.remove("main-projects-right");
+          mainProjects.classList.remove("main-projects-middle");
+          mainProjects.classList.remove("main-projects-half-left");
+          mainProjects.classList.add("main-projects-half-right");
+          return;
+        }
+        if (mainProjects.getBoundingClientRect().y < 0) {
+          mainProjects.classList.remove("main-projects-left");
+          mainProjects.classList.remove("main-projects-middle");
+          mainProjects.classList.remove("main-projects-half-left");
+          mainProjects.classList.remove("main-projects-half-right");
+          mainProjects.classList.add("main-projects-right");
+          return;
+        }
       }
     });
   });
@@ -84,11 +86,7 @@ const Projects = (props) => {
         } `}
       >
         <div className="main-projects" id="main-projects">
-          <a
-            href="https://www.sebgourmet-traiteur.com"
-            target="blank"
-            className=" hidden-mobile"
-          >
+          <a href="https://www.sebgourmet-traiteur.com" target="blank">
             <img src={project1} className=" main-project" />
           </a>
           <a href="https://www.claireturner-design.com" target="blank">
@@ -99,11 +97,7 @@ const Projects = (props) => {
           </a>
           <img src={project4} className=" main-project" />
 
-          <a
-            href="https://lafaceouest.com"
-            target="blank"
-            className=" hidden-mobile"
-          >
+          <a href="https://lafaceouest.com" target="blank">
             <img src={project5} className=" main-project" />
           </a>
         </div>
