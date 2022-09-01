@@ -6,13 +6,13 @@ import intakeInfo from "../content/intake";
 import "../styles/legal.css";
 
 const LegalPage = () => {
-  useEffect(() => {
-    const mainProjects = document.getElementById("main-projects");
-  });
+  // useEffect(() => {
+  //   const mainProjects = document.getElementById("main-projects");
+  // });
   return (
     <>
       <div className="legal">
-        <div className="main-projects" id="main-projects" />
+        {/* <div className="main-projects" id="main-projects" /> */}
 
         <h2>Informations légales</h2>
         <h3>1. Présentation du site.</h3>

@@ -19,31 +19,6 @@
   padding-bottom: 50px;
 }
 
-.main-projects-left {
-  margin-left: -50px;
-  margin-right: 50px;
-}
-
-.main-projects-half-left {
-  margin-left: -100px;
-  margin-right: 100px;
-}
-
-.main-projects-middle {
-  margin-left: -150px;
-  margin-right: 150px;
-}
-
-.main-projects-half-right {
-  margin-left: -200px;
-  margin-right: 200px;
-}
-
-.main-projects-right {
-  margin-left: -250px;
-  margin-right: 250px;
-}
-
 .main-project {
   transition: margin 150ms linear;
   width: 80vw;
