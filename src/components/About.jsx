@@ -74,6 +74,7 @@ const About = (props) => {
                 src="https://cdn.lordicon.com/sygggnra.json"
                 trigger="hover"
                 className="service-icon"
+                colors="primary:#b59b7c"
                 style={{ width: "100px", height: "100px" }}
               />
               <p>{languageToUse.designInfo}</p>
@@ -83,6 +84,7 @@ const About = (props) => {
                 src="https://cdn.lordicon.com/etllbcfy.json"
                 trigger="hover"
                 className="service-icon"
+                colors="primary:#b59b7c"
                 style={{ width: "100px", height: "100px" }}
               />
               <p>{languageToUse.codeInfo}</p>
@@ -92,6 +94,7 @@ const About = (props) => {
                 src="https://cdn.lordicon.com/auvicynv.json"
                 trigger="hover"
                 className="service-icon"
+                colors="primary:#b59b7c"
                 style={{ width: "100px", height: "100px" }}
               />
               <p>{languageToUse.otherInfo}</p>
