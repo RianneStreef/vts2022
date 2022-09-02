@@ -53,6 +53,8 @@
   align-items: center;
   padding: 30px;
   text-align: center;
+  border: 1px solid var(--color-highlight);
+  margin: 20px;
 }
 
 .skills {

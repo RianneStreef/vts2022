@@ -101,6 +101,7 @@ h2 {
   position: fixed;
   top: 20px;
   right: 40px;
+  z-index: 999;
 }
 
 .menu-container {
@@ -142,7 +143,7 @@ h2 {
 }
 
 .menu-button-button {
-  background-color: var(--color-highlight);
+  background-color: var(--color-text);
   color: var(--color-background);
   transition: all 500ms ease-in;
   font-size: 16px;
