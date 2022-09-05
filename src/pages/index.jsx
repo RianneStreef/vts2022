@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 import { Link } from "gatsby";
@@ -12,6 +12,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import Options from "../components/Options";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -84,7 +85,11 @@ const IndexPage = function (props) {
         languageToUse={languageToUse}
         darkMode={darkMode}
       />
-
+      {/* <Options
+        language={language}
+        languageToUse={languageToUse}
+        darkMode={darkMode}
+      /> */}
       <Contact language={language} languageToUse={languageToUse} />
       <div className="set-language-fixed">
         <button
@@ -120,13 +125,16 @@ const IndexPage = function (props) {
             TOP
           </Link>
 
-          <Link to="/#projects" id="top" className="menu-button">
+          <Link to="/#projects" className="menu-button">
             PROJECTS
           </Link>
-          <Link to="/#about" id="top" className="menu-button">
+          <Link to="/#about" className="menu-button">
             ABOUT
           </Link>
-          <Link to="/#contact" id="top" className="menu-button">
+          <Link to="/#options" className="menu-button">
+            OPTIONS
+          </Link>
+          <Link to="/#contact" className="menu-button">
             CONTACT
           </Link>
           <button
