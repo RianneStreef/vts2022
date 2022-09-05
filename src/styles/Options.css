@@ -1,3 +1,9 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .more-info {
   text-align: right;
   width: 100%;

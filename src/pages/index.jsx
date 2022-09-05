@@ -85,11 +85,11 @@ const IndexPage = function (props) {
         languageToUse={languageToUse}
         darkMode={darkMode}
       />
-      {/* <Options
+      <Options
         language={language}
         languageToUse={languageToUse}
         darkMode={darkMode}
-      /> */}
+      />
       <Contact language={language} languageToUse={languageToUse} />
       <div className="set-language-fixed">
         <button

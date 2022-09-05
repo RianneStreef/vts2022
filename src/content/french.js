@@ -23,9 +23,12 @@ export const french = {
 
   optionsIntro: "Nos Formules",
 
-  optionBasic: "Basics",
-  optionsPersonalized: "Personalized",
-  optionAllIn: "All in",
+  optionBasic:
+    "Basic - Specific products delivered without follow-up. For example: flyers, menus, basic website",
+  optionsPersonalized:
+    "Standard - Website with a number of options to add to your package. For example: social media feeds, translation, contact form",
+  optionAllIn:
+    "Premium - The complete package. Monthly updates and follow-ups. Includes back-ups, Google package, CMS.",
 
   moreInfo: "Plus d'informations",
 
