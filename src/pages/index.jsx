@@ -20,8 +20,8 @@ import flagFr from "../images/icon-fr.png";
 
 import top from "../images/top.svg";
 import topWhite from "../images/top-white.png";
-import sun from "../images/sun.svg";
-import moon from "../images/moon-white.png";
+import sun from "../images/sun-white.png";
+import moon from "../images/moon.svg";
 
 const IndexPage = function (props) {
   let { language, setLanguage, languageToUse, darkMode, setDarkMode } = props;
@@ -145,9 +145,9 @@ const IndexPage = function (props) {
       />
       <div className="mobile-menu mobile-only">
         {darkMode ? (
-          <img src={moon} className="dark-mode-icon" onClick={handleDarkMode} />
-        ) : (
           <img src={sun} className="dark-mode-icon" onClick={handleDarkMode} />
+        ) : (
+          <img src={moon} className="dark-mode-icon" onClick={handleDarkMode} />
         )}
         <Link to="/" className="top-link ">
           {darkMode ? (
