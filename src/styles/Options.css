@@ -1,0 +1,8 @@
+.more-info {
+  text-align: right;
+  width: 100%;
+  font-size: 12px;
+  margin: 0 10px;
+  color: var(--color-text);
+  text-decoration: none;
+}

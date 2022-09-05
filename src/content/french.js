@@ -21,6 +21,14 @@ export const french = {
   otherInfo:
     "Expertise ciblée : UI/UX, App View, newsletter, campagne Google Ads, SEO, suivi personnalisé...",
 
+  optionsIntro: "Nos Formules",
+
+  optionBasic: "Basics",
+  optionsPersonalized: "Personalized",
+  optionAllIn: "All in",
+
+  moreInfo: "Plus d'informations",
+
   contactTitle: "Let's Talk!",
 
   contactIntro: "Contact intro",
