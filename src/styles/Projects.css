@@ -50,6 +50,7 @@
   height: 100px;
   width: 100%;
   overflow: hidden;
+  z-index: 5;
 }
 
 .other-projects-list {
@@ -137,7 +138,7 @@ iframe {
   }
 
   .other-projects-list {
-    animation: image-slider 40s linear infinite;
+    animation: image-slider 25s linear infinite;
   }
   .partner-logo {
     width: 4vw;
@@ -150,7 +151,7 @@ iframe {
   }
 
   100% {
-    margin-left: -150%;
+    margin-left: -100%;
   }
 }
 
@@ -160,6 +161,6 @@ iframe {
   }
 
   100% {
-    margin-left: -120%;
+    margin-left: -70%;
   }
 }

@@ -14,6 +14,9 @@ import partner1 from "../images/partner1.png";
 import partner2 from "../images/partner2.png";
 import partner3 from "../images/partner3.png";
 import partner4 from "../images/partner4.png";
+import partner5 from "../images/partner5.png";
+import partner6 from "../images/partner6.png";
+import partner7 from "../images/partner7.png";
 
 const Projects = (props) => {
   let { language, languageToUse, darkMode } = props;
@@ -138,7 +141,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner1}
+              src={partner5}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -146,7 +149,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner2}
+              src={partner6}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -154,15 +157,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner4}
+              src={partner7}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -202,7 +197,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner1}
+              src={partner5}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -210,7 +205,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner2}
+              src={partner6}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -218,15 +213,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner4}
+              src={partner7}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -266,7 +253,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner1}
+              src={partner5}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -274,7 +261,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner2}
+              src={partner6}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
@@ -282,79 +269,7 @@ const Projects = (props) => {
           </li>
           <li>
             <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner4}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner1}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner2}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner4}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner1}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner2}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
-          </li>
-          <li>
-            <img
-              src={partner4}
+              src={partner7}
               className={`partner-logo ${
                 darkMode ? "partner-logo-dark" : "partner-logo-light"
               }`}
