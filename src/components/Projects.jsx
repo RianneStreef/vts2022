@@ -5,10 +5,10 @@ import { content } from "../content/languages";
 import "../styles/Projects.css";
 
 import project1 from "../images/projects/project1.jpg";
-import project2 from "../images/projects/project2.jpg";
+import project2 from "../images/projects/projectZenith.jpg";
 import project3 from "../images/projects/project3.jpg";
 import project4 from "../images/projects/project4.jpg";
-import project5 from "../images/projects/project5.jpg";
+import project5 from "../images/projects/projectCTD.jpg";
 
 import partner1 from "../images/partner1.png";
 import partner2 from "../images/partner2.png";
