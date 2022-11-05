@@ -5,7 +5,7 @@ export const french = {
   metaDescription:
     "VTS Webdesign c'est la synergie de 2 indépendants, Xavier le graphiste et Rianne la développeuse web, pour répondre à l'ensemble de vos projets de communication : Print et Web. Spécialisés dans les secteurs du tourisme et des loisirs, nous concevons les solutions digitales de votre communication.",
   metaKeywords:
-    "marketing digital, création site internet, développement de site internet, Val Thorens, Les Belleville, Trois Vallées ",
+    "marketing digital, création site internet, développement de site internet, Val Thorens, Les Belleville, Trois Vallées, web design",
 
   about: "A Propos",
   projects: "Projets",
