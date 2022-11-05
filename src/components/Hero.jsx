@@ -17,6 +17,9 @@ const Hero = (props) => {
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
 
+  console.log("language in hero");
+  console.log(language);
+
   return (
     <div className="hero">
       {darkMode ? (

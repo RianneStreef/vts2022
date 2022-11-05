@@ -2,8 +2,10 @@ export const english = {
   language: "english",
 
   indexTitle: "VTS Web Design",
-  metaDescription: "French  description",
-  metaKeywords: "French  keywords",
+  metaDescription:
+    "VTS Webdesign is the synergy of 2 freelancers, Xavier the graphic designer and Rianne the web developer, to answer all your communication projects: Print and Web. Specialized in the tourism and leisure sectors, we conceive the digital solutions of your communication.",
+  metaKeywords:
+    "digital marketing, website design, website development, Val Thorens, Les Belleville, Trois Vallées ",
 
   projects: "Projects",
   contact: "Contact",

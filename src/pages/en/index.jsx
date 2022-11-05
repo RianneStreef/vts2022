@@ -3,35 +3,35 @@ import { Helmet } from "react-helmet";
 
 import { Link } from "gatsby";
 
-import "../styles/global.css";
+import "../../styles/global.css";
 
-import { content } from "../content/languages";
-import intakeInfo from "../content/intake";
+import { content } from "../../content/languages";
+import intakeInfo from "../../content/intake";
 
-import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Options from "../components/Options";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Layout from "../../components/Layout";
+import Hero from "../../components/Hero";
+import About from "../../components/About";
+import Projects from "../../components/Projects";
+import Options from "../../components/Options";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 
-import flagEn from "../images/icon-en.png";
-import flagFr from "../images/icon-fr.png";
+import flagEn from "../../images/icon-en.png";
+import flagFr from "../../images/icon-fr.png";
 
-import top from "../images/top.svg";
-import topWhite from "../images/top-white.png";
-import sun from "../images/sun-white.png";
-import moon from "../images/moon.svg";
+import top from "../../images/top.svg";
+import topWhite from "../../images/top-white.png";
+import sun from "../../images/sun-white.png";
+import moon from "../../images/moon.svg";
 
 const IndexPage = function (props) {
   let { language, setLanguage, darkMode, setDarkMode } = props;
 
+  let languageToUse = content.english;
+
   function handleSetLanguage(language) {
     setLanguage(language);
   }
-
-  let languageToUse = content.french;
 
   function handleDarkMode() {
     setDarkMode(!darkMode);
@@ -61,7 +61,7 @@ const IndexPage = function (props) {
     <div>
       <Helmet
         htmlAttributes={{
-          lang: "fr",
+          lang: "en",
         }}
       >
         <title>{languageToUse.indexTitle}</title>
@@ -126,20 +126,20 @@ const IndexPage = function (props) {
       </div>
       <div className="menu-container hidden-mobile ">
         <div className="fixed-menu">
-          <Link to="/" id="top" className="menu-button">
+          <Link to="/en/" id="top" className="menu-button">
             TOP
           </Link>
 
-          <Link to="/#projects" className="menu-button">
+          <Link to="/en/#projects" className="menu-button">
             PROJECTS
           </Link>
-          <Link to="/#about" className="menu-button">
+          <Link to="/en/#about" className="menu-button">
             ABOUT
           </Link>
-          {/* <Link to="/#options" className="menu-button">
+          {/* <Link to="/en/#options" className="menu-button">
             OPTIONS
           </Link> */}
-          <Link to="/#contact" className="menu-button">
+          <Link to="/en/#contact" className="menu-button">
             CONTACT
           </Link>
           <button
@@ -157,7 +157,7 @@ const IndexPage = function (props) {
         ) : (
           <img src={moon} className="dark-mode-icon" onClick={handleDarkMode} />
         )}
-        <Link to="/" className="top-link ">
+        <Link to="/en/" className="top-link ">
           {darkMode ? (
             <img src={topWhite} className="top-link" />
           ) : (
