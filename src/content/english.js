@@ -8,6 +8,7 @@ export const english = {
     "digital marketing, website design, website development, Val Thorens, Les Belleville, Trois Vallées ",
 
   projects: "Projects",
+  about: "About",
   contact: "Contact",
 
   heroTitle: "Creator of digital solutions",

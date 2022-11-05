@@ -130,11 +130,11 @@ const IndexPage = function (props) {
             TOP
           </Link>
 
-          <Link to="/#projects" className="menu-button">
-            PROJECTS
+          <Link to="/en/#projects" className="menu-button">
+            {languageToUse.projects}
           </Link>
-          <Link to="/#about" className="menu-button">
-            ABOUT
+          <Link to="/en/#about" className="menu-button">
+            {languageToUse.about}
           </Link>
           {/* <Link to="/#options" className="menu-button">
             OPTIONS

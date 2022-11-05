@@ -40,10 +40,16 @@ const Hero = (props) => {
         </div>
       )}
       <div className="hero-links">
-        <Link to="/#contact" className="hero-button hero-button-blue">
+        <Link
+          to={`${language === "english" ? "/en/#contact" : "/#contact"}`}
+          className="hero-button hero-button-blue"
+        >
           {languageToUse.contactTitle}
         </Link>
-        <Link to="/#projects" className="hero-button hero-button-transparent">
+        <Link
+          to={`${language === "english" ? "/en/#projects" : "/#projects"}`}
+          className="hero-button hero-button-transparent"
+        >
           {languageToUse.projects}
         </Link>
       </div>

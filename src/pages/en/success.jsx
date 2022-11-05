@@ -16,11 +16,9 @@ import sun from "../../images/sun.svg";
 import moon from "../../images/moon-white.png";
 
 const SuccessPage = function (props) {
-  let { language, languageToUse, darkMode, setDarkMode } = props;
+  let { language, darkMode, setDarkMode } = props;
 
-  language === "english"
-    ? (languageToUse = content.english)
-    : (languageToUse = content.french);
+  let languageToUse = content.english;
 
   function handleDarkMode() {
     setDarkMode(!darkMode);
@@ -48,7 +46,11 @@ const SuccessPage = function (props) {
 
   return (
     <div className="success">
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
         <title>{languageToUse.indexTitle}</title>
         <meta name="robots" content="index, follow" />
         <meta name="description" content={languageToUse.metaDescription} />
@@ -59,17 +61,17 @@ const SuccessPage = function (props) {
       <p>{languageToUse.thanks}</p>
       <div className="menu-container hidden-mobile ">
         <div className="fixed-menu">
-          <Link to="/" id="top" className="menu-button">
+          <Link to="/en/" id="top" className="menu-button">
             TOP
           </Link>
 
-          <Link to="/#projects" id="top" className="menu-button">
+          <Link to="/en/#projects" id="top" className="menu-button">
             PROJECTS
           </Link>
-          <Link to="/#about" id="top" className="menu-button">
+          <Link to="/en/#about" id="top" className="menu-button">
             ABOUT
           </Link>
-          <Link to="/#contact" id="top" className="menu-button">
+          <Link to="/en/#contact" id="top" className="menu-button">
             CONTACT
           </Link>
           <button
@@ -86,7 +88,7 @@ const SuccessPage = function (props) {
         ) : (
           <img src={sun} className="dark-mode-icon" onClick={handleDarkMode} />
         )}
-        <Link to="/" className="top-link ">
+        <Link to="/en/" className="top-link ">
           {darkMode ? (
             <img src={topWhite} className="top-link" />
           ) : (
