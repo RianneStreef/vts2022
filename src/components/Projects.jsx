@@ -108,188 +108,234 @@ const Projects = (props) => {
       <div className="other-projects">
         <ul className="other-projects-list">
           <li>
-            <img
-              src={partner1}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.claireturner-design.com" target="blank">
+              <img
+                src={partner1}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner2}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.coremove.nl" target="blank">
+              <img
+                src={partner2}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.chalet-du-caribou.com" target="blank">
+              <img
+                src={partner3}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner4}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.sebgourmet-traiteur.com" target="blank">
+              <img
+                src={partner4}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner5}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.leslodgesdepraly.fr" target="blank">
+              <img
+                src={partner5}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner6}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://lafaceouest.com" target="blank">
+              <img
+                src={partner6}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner7}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://zenith-skishop.com" target="blank">
+              <img
+                src={partner7}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner1}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.claireturner-design.com" target="blank">
+              <img
+                src={partner1}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner2}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.coremove.nl" target="blank">
+              <img
+                src={partner2}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.chalet-du-caribou.com" target="blank">
+              <img
+                src={partner3}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner4}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.sebgourmet-traiteur.com" target="blank">
+              <img
+                src={partner4}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner5}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.leslodgesdepraly.fr" target="blank">
+              <img
+                src={partner5}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner6}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://lafaceouest.com" target="blank">
+              <img
+                src={partner6}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner7}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://zenith-skishop.com" target="blank">
+              <img
+                src={partner7}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner1}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.claireturner-design.com" target="blank">
+              <img
+                src={partner1}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner2}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.coremove.nl" target="blank">
+              <img
+                src={partner2}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner3}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.chalet-du-caribou.com" target="blank">
+              <img
+                src={partner3}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner4}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.sebgourmet-traiteur.com" target="blank">
+              <img
+                src={partner4}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner5}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.leslodgesdepraly.fr" target="blank">
+              <img
+                src={partner5}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner6}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://lafaceouest.com" target="blank">
+              <img
+                src={partner6}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner7}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://zenith-skishop.com" target="blank">
+              <img
+                src={partner7}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner1}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.claireturner-design.com" target="blank">
+              <img
+                src={partner1}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
           <li>
-            <img
-              src={partner2}
-              className={`partner-logo ${
-                darkMode ? "partner-logo-dark" : "partner-logo-light"
-              }`}
-            />
+            <a href="https://www.coremove.nl" target="blank">
+              <img
+                src={partner2}
+                className={`partner-logo ${
+                  darkMode ? "partner-logo-dark" : "partner-logo-light"
+                }`}
+              />
+            </a>
           </li>
         </ul>
       </div>
