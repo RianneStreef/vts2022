@@ -16,6 +16,9 @@ const Copyright = (props) => {
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
 
+  // let year = 2000;
+  let year = new Date().getFullYear();
+
   return (
     <div className="copyright">
       {darkMode ? (
@@ -36,7 +39,7 @@ const Copyright = (props) => {
         </div>
       )}{" "}
       <p>
-        Copyright {languageToUse.copyright}{" "}
+        Copyright {year} {languageToUse.copyright}{" "}
         <Link to="/legal">{languageToUse.mentionsLegal} </Link>
       </p>
     </div>
