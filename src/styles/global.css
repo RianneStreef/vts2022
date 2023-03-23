@@ -120,7 +120,6 @@ h2 {
   background-color: var(--color-background-transparent);
   color: var(--color-background);
   font-family: "Noto";
-  border: 2px solid var(--color-text);
   border-radius: 5px;
   padding: 10px;
   text-decoration: none;

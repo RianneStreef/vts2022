@@ -16,7 +16,6 @@ const Copyright = (props) => {
   language === "english" ? (languageToUse = content.english) : null;
   language === "french" ? (languageToUse = content.french) : null;
 
-  // let year = 2000;
   let year = new Date().getFullYear();
 
   return (
