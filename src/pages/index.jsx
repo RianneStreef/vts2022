@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import { Link } from "gatsby";
@@ -24,6 +24,12 @@ import topWhite from "../images/top-white.png";
 import sun from "../images/sun-white.png";
 import moon from "../images/moon.svg";
 
+import ReactGA from "react-ga4";
+import CookieConsent, {
+  getCookieConsentValue,
+  Cookies,
+} from "react-cookie-consent";
+
 const IndexPage = function (props) {
   let { language, setLanguage, darkMode, setDarkMode } = props;
 
@@ -32,6 +38,31 @@ const IndexPage = function (props) {
   }
 
   let languageToUse = content.french;
+
+  const initGA = (id) => {
+    // if (process.env.NODE_ENV === "production") {
+    console.log("InitGA");
+    ReactGA.initialize(id);
+    //}
+  };
+
+  const handleAcceptCookie = () => {
+    initGA("G-N4375M51XE");
+  };
+
+  const handleDeclineCookie = () => {
+    Cookies.remove("_ga");
+    Cookies.remove("_gat");
+    Cookies.remove("_gid");
+  };
+
+  useEffect(() => {
+    const isConsent = getCookieConsentValue();
+
+    if (isConsent === "true") {
+      handleAcceptCookie();
+    }
+  }, []);
 
   function handleDarkMode() {
     setDarkMode(!darkMode);
@@ -71,6 +102,16 @@ const IndexPage = function (props) {
         <link rel="canonical" href={intakeInfo.domainName} />
         <script src="https://cdn.lordicon.com/xdjxvujz.js" />
       </Helmet>
+      <CookieConsent
+        enableDeclineButton
+        onAccept={handleAcceptCookie}
+        onDecline={handleDeclineCookie}
+        buttonText={languageToUse.cookieAccept}
+        declineButtonText={languageToUse.cookieDecline}
+      >
+        <p className="cookie-text-header">{languageToUse.cookieHeader}</p>
+        <p className="cookie-text">{languageToUse.cookieText}</p>
+      </CookieConsent>
       <Hero
         language={language}
         languageToUse={languageToUse}

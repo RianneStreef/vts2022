@@ -39,6 +39,11 @@ export const french = {
   message: "Message",
   send: "Envoyer",
 
+  cookieHeader: "Nous utilisons des cookies",
+  cookieText: "Ce site web utilise des cookies pour évaluer notre trafic.",
+  cookieAccept: "J'accepte !",
+  cookieDecline: "Je refuse..",
+
   quote:
     "Créateurs de solutions digitales à taille humain. Site web fully responsive, spécialisé dans les secteurs de tourisme et loisirs, avec un suivie personel.",
 

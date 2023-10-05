@@ -32,6 +32,11 @@ export const english = {
   message: "Message",
   send: "Send",
 
+  cookieHeader: "WE VALUE YOUR PRIVACY!",
+  cookieText: "This website uses cookies to evaluate our traffic.",
+  cookieAccept: "I accept!",
+  cookieDecline: "I decline..",
+
   thanks: "Thank you for your message!",
 
   copyright: "VTS Web Design - All rights reserved.",
