@@ -38,16 +38,5 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ["G-KK1DZ5P3EG"],
-        pluginConfig: {
-          head: true,
-        },
-        enableWebVitalsTracking: true,
-        respectDNT: true,
-      },
-    },
   ],
 };
